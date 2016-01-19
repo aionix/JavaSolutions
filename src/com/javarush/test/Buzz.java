@@ -4,7 +4,7 @@ import java.util.*;
 /**
  * Created by user on 19.01.2016.
  */
-public class BuzzTask {
+public class Buzz {
 
     public static void number(int a) {
         if (a > 0 & a <= 100) {
