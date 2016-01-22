@@ -25,3 +25,10 @@ public class Buzz {
         number(input.nextInt());
     }
 }
+
+/* 	Более компактная запись первой части:
+BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+
+String name = reader.readLine();
+String sAge = reader.readLine();
+int nAge = Integer.parseInt(sAge); */

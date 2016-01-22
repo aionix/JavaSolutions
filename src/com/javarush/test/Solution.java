@@ -1,20 +1,28 @@
 package com.javarush.test;
 
 import java.io.*;
-
+/* Интервал
+Реализовать метод checkInterval. Метод должен проверять попало ли целое число в интервал от 50 до 100
+и сообщить результат на экран в следующем виде: "Число а не содержится в интервале." или "Число а содержится в интервале.",
+где  а - аргумент метода.
+Пример для числа 112:
+Число 112 не содержится в интервале.
+Пример для числа 60:
+Число 60 содержится в интервале.
+*/
 public class Solution {
 
-    public static void main(String[] args) throws IOException {
-	// write your code here 777 rwer
 
-     /*     Scanner input = new Scanner(System.in);
-        String name = input.nextLine();
-        System.out.print(name + "some text");*/
+    public static void main(String[] args) {
+        checkInterval(60);
+        checkInterval(112);
+    }
 
-        BufferedReader input = new BufferedReader(new InputStreamReader(System.in));
-        String name = input.readLine();
-        System.out.print(name + "some text");
-
+    public static void checkInterval(int a){
+        //::CODE:
+        if ((a<=100) && (a >= 50))
+            System.out.println("Число а содержится в интервале.");
+        else if ((a >= 50) && (a >= 100))
+            System.out.println("Число а не содержится в интервале.");
     }
 }
-
