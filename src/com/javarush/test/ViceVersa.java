@@ -6,7 +6,7 @@ package com.javarush.test;
 public class ViceVersa {
 
 
-    static String abc = "Алена";
+     static String abc = "Алена";
 
     public static void main(String[] args){
  //   public void data(String abc) {
