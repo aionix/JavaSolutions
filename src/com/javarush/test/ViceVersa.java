@@ -3,7 +3,7 @@ package com.javarush.test;
 /**
  * Created by user on 26.01.2016.
  */
-public class ViceVersaeStringMassive {
+public class ViceVersa {
 
 
     static String abc = "Алена";
