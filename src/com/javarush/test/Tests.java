@@ -9,36 +9,32 @@ import java.io.InputStreamReader;
  */
 public class Tests {
 
-    /* Ввести с клавиатуры три числа а, b, c – стороны предполагаемого треугольника.
-Определить возможность существования треугольника по сторонам. Результат вывести на экран в следующем виде:
-"Треугольник существует." - если треугольник с такими сторонами существует.
-"Треугольник не существует." - если треугольник с такими сторонами не существует.
-Подсказка: Треугольник существует только тогда, когда сумма любых двух его сторон больше третьей.
-Требуется сравнить каждую сторону с суммой двух других.
-Если хотя бы в одном случае сторона окажется больше суммы двух других, то треугольника с такими сторонами не существует
+    /* Ввести с клавиатуры два числа m и n.
+Используя цикл for вывести на экран прямоугольник размером m на n из восьмёрок.
+Пример: m=2, n=4
+8888
+8888
 */
-    public static void data( int num, int num2,int num3) {
-        if (num + num2 > num3 && num + num3 > num2 && num2 + num3 > num)
-            System.out.println("Треугольник существует.");
-        else
-            System.out.println("Треугольник не существует.");
 
 
-
-
-    }
 
 
     public static void main(String[] args) throws IOException {
 
         BufferedReader input = new BufferedReader(new InputStreamReader(System.in));
-        String tempNum = input.readLine();
+        String tempString = input.readLine();
         String tempNum2 = input.readLine();
-        String tempNum3 = input.readLine();
-        int tempInt = Integer.parseInt(tempNum);
-        int tempInt2 = Integer.parseInt(tempNum2);
-        int tempInt3 = Integer.parseInt(tempNum3);
-        data(tempInt, tempInt2, tempInt3);
+        int m = Integer.parseInt(tempString);
+        int n = Integer.parseInt(tempNum2);
+
+        for (int i = 0; i < m; i ++ ){
+            System.out.println();
+            for (int j = 0; j < n; j++ ){
+                System.out.print("8");
+            }
+
+        }
+
 
 
     }
