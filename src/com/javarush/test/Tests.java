@@ -9,11 +9,11 @@ import java.io.InputStreamReader;
  */
 public class Tests {
 
-    /* Ввести с клавиатуры два числа m и n.
-Используя цикл for вывести на экран прямоугольник размером m на n из восьмёрок.
-Пример: m=2, n=4
-8888
-8888
+    /* Используя цикл for вывести на экран прямоугольный треугольник из восьмёрок со сторонами 10 и 10.
+Пример:
+8
+88
+888
 */
 
 
@@ -21,20 +21,14 @@ public class Tests {
 
     public static void main(String[] args) throws IOException {
 
-        BufferedReader input = new BufferedReader(new InputStreamReader(System.in));
-        String tempString = input.readLine();
-        String tempNum2 = input.readLine();
-        int m = Integer.parseInt(tempString);
-        int n = Integer.parseInt(tempNum2);
-
-        for (int i = 0; i < m; i ++ ){
+    int b = 8;
+            for (int i = 0; i < 10; i ++ ){
             System.out.println();
-            for (int j = 0; j < n; j++ ){
-                System.out.print("8");
+            for (int j = i; j > 0; j-- ){
+                System.out.print(b);
             }
 
-        }
-
+            }
 
 
     }
